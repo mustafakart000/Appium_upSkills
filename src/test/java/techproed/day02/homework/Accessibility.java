@@ -42,6 +42,7 @@ public class Accessibility {
         back();
         back();
     }
+
     @Test
     public void manageContentOptions() throws MalformedURLException {
         //id element (resource-id element)
