@@ -3,6 +3,7 @@ package techproed.day01;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.Test;
 
 
 import java.net.MalformedURLException;
