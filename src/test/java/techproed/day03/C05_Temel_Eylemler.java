@@ -5,16 +5,16 @@ import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import techproed.Utilities;
+import basetest.ApiDemos;
 
 import java.net.MalformedURLException;
 
-import static techproed.Utilities.driver;
+import static basetest.ApiDemos.driver;
 
 public class C05_Temel_Eylemler {
     @Test
     public void testTemelEylemler() throws MalformedURLException, InterruptedException {
-        Utilities.pathAndDriver("ApiDemos-debug.apk");
+        ApiDemos.setup("ApiDemos-debug.apk");
         By app = AppiumBy.accessibilityId("App");
         By activity = AppiumBy.accessibilityId("Activity");
         By customTitle = AppiumBy.accessibilityId("Custom Title");
