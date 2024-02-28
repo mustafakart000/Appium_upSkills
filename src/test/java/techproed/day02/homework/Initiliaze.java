@@ -14,7 +14,7 @@ import java.time.Duration;
 
 public class Initiliaze {
 
-    public static AndroidDriver driver;
+     static AndroidDriver driver;
 
 
     static AndroidDriver beforeMethod() throws MalformedURLException {

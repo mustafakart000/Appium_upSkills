@@ -1,7 +1,6 @@
 package techproed.day03;
 
 import io.appium.java_client.AppiumBy;
-import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -9,13 +8,13 @@ import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 
-import static techproed.Utilities.*;
+import static basetest.ApiDemos.*;
 
 public class C04_NativeElement {
 
     @Test
     public void testWebElemenet() throws MalformedURLException {
-        pathAndDriver("ApiDemos-debug.apk");
+        setup("ApiDemos-debug.apk");
        WebElement elementApp= driver.findElement(AppiumBy.accessibilityId("App"));
         elementApp.click();
       WebElement elementAlarm=  driver.findElement(AppiumBy.accessibilityId("Alarm"));
@@ -27,7 +26,7 @@ public class C04_NativeElement {
     }
     @Test
     public void testBy() throws MalformedURLException {
-        pathAndDriver("ApiDemos-debug.apk");
+        setup("ApiDemos-debug.apk");
 
         //-------------------------------------------------------------------
         By app = AppiumBy.accessibilityId("App");
